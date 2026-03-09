@@ -28,12 +28,7 @@ That line is intentionally present to trigger the parser failure.
 
 Vercel prioritizes a root `pyproject.toml` over `requirements.txt` during Python manifest detection. Because the parser bug is easiest to hit through `requirements.txt`, the root `pyproject.toml` has been intentionally removed.
 
-This repo still includes Poetry-shaped context files:
-
-- [pyproject.poetry.toml](/Users/zach/testing/fastapi/pyproject.poetry.toml)
-- [poetry.lock](/Users/zach/testing/fastapi/poetry.lock)
-
-Those files exist because the original bug report involved generating `requirements.txt` from `poetry.lock`. They are included here to preserve that context, but they are not the active root manifest in this repo.
+This repo still includes [poetry.lock](/Users/zach/testing/fastapi/poetry.lock) because the original bug report involved generating `requirements.txt` from a Poetry lockfile. It is included here as context, but it is not the active root manifest in this repo.
 
 ## Vercel Dashboard Caveat
 
