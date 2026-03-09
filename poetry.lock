@@ -1,0 +1,34 @@
+# This file mirrors the Poetry-origin context for the repro.
+
+[[package]]
+name = "fastapi"
+version = "0.121.0"
+description = "FastAPI framework"
+optional = false
+python-versions = ">=3.8"
+groups = ["main"]
+files = []
+
+[[package]]
+name = "uvicorn"
+version = "0.34.0"
+description = "ASGI server"
+optional = false
+python-versions = ">=3.9"
+groups = ["main"]
+files = []
+
+[[package]]
+name = "greenlet"
+version = "3.3.0"
+description = "Lightweight in-process concurrent programming"
+optional = false
+python-versions = "==3.12"
+groups = ["main"]
+markers = "python_version == \"3.12\" and (platform_machine == \"aarch64\" or platform_machine == \"ppc64le\" or platform_machine == \"x86_64\" or platform_machine == \"amd64\" or platform_machine == \"AMD64\" or platform_machine == \"win32\" or platform_machine == \"WIN32\")"
+files = []
+
+[metadata]
+lock-version = "2.1"
+python-versions = ">=3.12,<3.13"
+content-hash = "repro"
